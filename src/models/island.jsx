@@ -23,6 +23,7 @@ export function Island({
   currentFocusPoint,
   ...props
 }) {
+  // const Island =({ isRotating, setIsRotating, ...props}) =>{
   const islandRef = useRef();
   // Get access to the Three.js renderer and viewport
   const { gl, viewport } = useThree();
