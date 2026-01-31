@@ -61,7 +61,7 @@ import Alert from '../components/Alert';
 
   return (
     <section className="relative flex lg:flex-row flex-col
-    max-container">
+    max-container h-[100vh]">
       {alert.show && <Alert {...alert} />}
       
 
