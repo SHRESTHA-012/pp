@@ -1,19 +1,20 @@
 import React from 'react';
-import { Canvas } from '@react-three/fiber';
+import { Canvas , extend } from '@react-three/fiber';
 import { useState, Suspense } from "react";
 import Loader from '../components/Loader';
 import { Island } from '../models/island';
-import Sky from '../models/Sky';
+import Skynew from '../models/Skynew';
 import Bird from '../models/Bird';
 import Plane from '../models/Plane';
 import  HomeInfo  from '../components/HomeInfo';
+import Skyyy from '../models/Skyyy';
 
 
 const Home = () => {
   const [isRotating, setIsRotating] = useState(false);
   const [currentStage, setCurrentStage] = useState(1);
 
-  
+ 
 
   const adjustIslandForScreenSize = () =>{
 
@@ -56,15 +57,27 @@ const Home = () => {
           {currentStage && <HomeInfo currentStage={currentStage} />}
 
         </div>
-        <Canvas 
+        <Canvas
+         
         className={`w-full h-screen bg-transparent ${isRotating ?
           'cursor-grabbing': 'cursor-grab'}`}
         camera={{near : 0.1 , far : 1000}}
+        
         >
             <Suspense fallback={<Loader />}>
 
+          <Skyyy />
+          
+
             <Bird />
-            <Sky isRotating={isRotating}/>
+            <Skynew isRotating={isRotating}/>
+            
+            {/* <Magicalsky /> */}
+
+
+
+             
+            
 
             <Island 
             position ={islandPosition}
@@ -100,3 +113,7 @@ const Home = () => {
 }
 
 export default Home
+
+
+
+
