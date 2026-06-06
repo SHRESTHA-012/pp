@@ -1,29 +1,23 @@
 import { yonderai } from "../assets/images";
-import {
+import { gssoc } from "../assets/images";
+import { ssoc } from "../assets/images";
+import { 
     car,
     contact,
     css,
-    estate,
-    express,
     git,
     github,
     html,
     javascript,
+    java,
+    mysql,
+    pandas,
+    python,
+    numpy,
     linkedin,
-    mongodb,
-    motion,
-    mui,
-    nextjs,
-    nodejs,
-    pricewise,
     react,
-    redux,
-    sass,
-    snapgram,
-    summiz,
     tailwindcss,
     threads,
-    typescript
 } from "../assets/icons";
 
 export const skills = [
@@ -31,11 +25,6 @@ export const skills = [
         imageUrl: css,
         name: "CSS",
         type: "Frontend",
-    },
-    {
-        imageUrl: express,
-        name: "Express",
-        type: "Backend",
     },
     {
         imageUrl: git,
@@ -58,29 +47,29 @@ export const skills = [
         type: "Frontend",
     },
     {
-        imageUrl: mongodb,
-        name: "MongoDB",
+        imageUrl: mysql,
+        name: "MySQL",
         type: "Database",
     },
     {
-        imageUrl: motion,
-        name: "Motion",
-        type: "Animation",
+        imageUrl: java,
+        name: "Java",
+        type: "Programming Language",
     },
     {
-        imageUrl: mui,
-        name: "Material-UI",
-        type: "Frontend",
+        imageUrl: python,
+        name: "Python",
+        type: "Programming Language",
     },
     {
-        imageUrl: nextjs,
-        name: "Next.js",
-        type: "Frontend",
+        imageUrl: pandas,
+        name: "Pandas",
+        type: "Python Library",
     },
     {
-        imageUrl: nodejs,
-        name: "Node.js",
-        type: "Backend",
+        imageUrl: numpy,
+        name: "Numpy",
+        type: "Pyhton Library",
     },
     {
         imageUrl: react,
@@ -88,25 +77,11 @@ export const skills = [
         type: "Frontend",
     },
     {
-        imageUrl: redux,
-        name: "Redux",
-        type: "State Management",
-    },
-    {
-        imageUrl: sass,
-        name: "Sass",
-        type: "Frontend",
-    },
-    {
         imageUrl: tailwindcss,
         name: "Tailwind CSS",
         type: "Frontend",
-    },
-    {
-        imageUrl: typescript,
-        name: "TypeScript",
-        type: "Frontend",
     }
+
 ];
 
 export const experiences = [
@@ -122,6 +97,32 @@ export const experiences = [
             "Conducted data cleaning, feature extraction, and exploratory data analysis (EDA) to enhance model accuracy.",
         ],
     },
+    {
+        title: "Open Source Contributor",
+        company_name: "GirScript Summer of Code",
+        icon: gssoc,
+        iconBg: "#accbe1",
+        date: "May 2026 - August 2026",
+        points: [
+            "Chosen as a Contributor for GirlScript Summer of Code 2026, one of  India's leading open source initiatives.",
+            "Collaborating with maintainers on real-world repositories using professional Git and GitHub workflows.",
+            "Actively contributing to open source projects by resolving issues, submitting pull requests.",
+        ],
+
+    },
+        {
+        title: "Open Source Contributor",
+        company_name: "Social Summer of Code",
+        icon: ssoc,
+        iconBg: "#accbe1",
+        date: "June 2026 - August 2026",
+        points: [
+            "Contributed to open-source projects as part of GirlScript Summer of Code (GSSoC) 2026, collaborating with maintainers and developers to implement features, fix bugs, and improve project functionality.",
+            "Applied software development best practices, including version control with Git/GitHub, code reviews, and issue tracking in a collaborative open-source environment.",
+            "Enhanced project quality by contributing code, documentation, and optimizations while gaining hands-on experience in real-world development workflows and community-driven software development.",
+        ],
+
+    }
 ];
 
 export const socialLinks = [
@@ -144,7 +145,7 @@ export const socialLinks = [
 
 export const projects = [
     {   //just a sample project is here; TODO: Will include my own projects instead of these
-        iconUrl: pricewise,
+        // iconUrl: pricewise,
         theme: 'btn-back-red',
         name: 'Amazon Price Tracker',
         description: 'Developed a web application that tracks and notifies users of price changes for products on Amazon, helping users find the best deals.',

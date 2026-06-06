@@ -1,17 +1,11 @@
-import hero from './hero.jpg'
-import meta from './meta.png'
-import shopify from './shopify.png'
-import starbucks from './starbucks.png'
-import tesla from './tesla.png'
+import gssoc from './gssoc.png'
 import logo from './logo.svg'
 import yonderai from './yonderai.jpeg'
+import ssoc from './ssoc.png'
 
 export {
-    hero,
-    meta,
-    shopify,
-    starbucks,
-    tesla,
+    gssoc,
     logo,
-    yonderai
+    yonderai,
+    ssoc
 }
