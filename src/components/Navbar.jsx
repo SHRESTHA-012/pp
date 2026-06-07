@@ -11,11 +11,11 @@ const Navbar = ({ isHome }) => {
         </NavLink>
         <nav className="flex text-lg gap-7 font-medium">
             <NavLink to="/about" className={({ isActive}) => isActive ?
-            'text-blue-500' : inactiveClass}>
+            'text-blue-500' : `${inactiveClass} hover:text-white transition-colors duration-200 px-3 py-1 rounded-md bg-white/10 hover:bg-white/20 backdrop-blur-sm`}>
               About
             </NavLink>
              <NavLink to="/projects" className={({ isActive}) => isActive ?
-            'text-blue-500' : inactiveClass}>
+            'text-blue-500' : `${inactiveClass} hover:text-white transition-colors duration-200 px-3 py-1 rounded-md bg-white/10 hover:bg-white/20 backdrop-blur-sm`}>
               Projects
             </NavLink>
         </nav>
