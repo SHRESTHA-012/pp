@@ -27,11 +27,11 @@ body:has(.card[data-color="green"]:hover) {
   }
 
   .head-text {
-    @apply sm:text-5xl text-3xl font-semibold sm:leading-snug font-poppins;
+    @apply sm:text-5xl text-3xl font-semibold sm:leading-snug font-poppins text-white;
   }
 
   .subhead-text {
-    @apply font-semibold sm:text-3xl text-xl relative font-poppins;
+    @apply font-semibold sm:text-3xl text-xl relative font-poppins text-white;
   }
 
   .blue-gradient_text {
@@ -39,11 +39,11 @@ body:has(.card[data-color="green"]:hover) {
   }
 
   .input {
-    @apply bg-white border border-gray-200 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 mt-2.5 font-normal shadow-card;
+    @apply bg-[#1a1a2e] border border-gray-700 text-gray-100 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 mt-2.5 font-normal shadow-card placeholder-gray-500;
   }
 
   .textarea {
-    @apply block p-2.5 w-full text-sm text-gray-900 bg-white rounded-lg border border-gray-200 focus:ring-blue-500 focus:border-blue-500 mt-2.5 font-normal shadow-card;
+    @apply block p-2.5 w-full text-sm text-gray-100 bg-[#1a1a2e] rounded-lg border border-gray-700 focus:ring-blue-500 focus:border-blue-500 mt-2.5 font-normal shadow-card placeholder-gray-500;
   }
 
   .btn {
@@ -75,7 +75,7 @@ body:has(.card[data-color="green"]:hover) {
   }
 
   .cta-text {
-    @apply text-black-500 font-extrabold flex-1 text-3xl max-md:text-center;
+    @apply text-gray-100 font-extrabold flex-1 text-3xl max-md:text-center;
   }
 }
 
@@ -180,4 +180,17 @@ body:has(.card[data-color="green"]:hover) {
   border: #fff;
   box-shadow: 0.6vmin 0.6vmin #fff, 1vmin 1vmin #d2e4ff, 1vmin 1vmin #d2e4ff,
     0.65vmin 1vmin #d2e4ff, 1vmin 0.65vmin #d2e4ff;
+}
+
+/* Dark theme overrides for react-vertical-timeline */
+.vertical-timeline::before {
+  background: #374151 !important;
+}
+
+.vertical-timeline-element-icon {
+  box-shadow: 0 0 0 4px #374151, inset 0 2px 0 rgba(0,0,0,.08), 0 3px 0 4px rgba(0,0,0,.05) !important;
+}
+
+.vertical-timeline-element-content .vertical-timeline-element-date {
+  color: #9ca3af !important;
 }

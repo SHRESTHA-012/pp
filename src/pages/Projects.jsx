@@ -14,7 +14,7 @@ const Projects = () => {
         </span>
       </h1>
 
-      <p className='text-slate-500 mt-2 leading-relaxed'>
+      <p className='text-gray-400 mt-2 leading-relaxed'>
         I've embarked on numerous projects throughout the years, but these are
         the ones I hold closest to my heart.
         Your collaboration is highly valued!
@@ -35,10 +35,10 @@ const Projects = () => {
             </div>
 
             <div className='mt-5 flex flex-col'>
-              <h4 className='text-2xl font-poppins font-semibold'>
+              <h4 className='text-2xl font-poppins font-semibold text-gray-100'>
                 {project.name}
               </h4>
-              <p className='mt-2 text-slate-500'>{project.description}</p>
+              <p className='mt-2 text-gray-400'>{project.description}</p>
               <div className='mt-5 flex items-center gap-2 font-poppins'>
                 <Link
                   to={project.link}
@@ -59,7 +59,7 @@ const Projects = () => {
         ))}
       </div>
 
-      <hr className='border-slate-200' />
+      <hr className='border-gray-700' />
 
       <CTA />
     </section>

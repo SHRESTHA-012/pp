@@ -74,7 +74,7 @@ import Alert from '../components/Alert';
         >
           
 
-            <label className="text-black-500 font-semibold">
+            <label className="text-gray-300 font-semibold">
             Name
             <input
             type="text"
@@ -91,7 +91,7 @@ import Alert from '../components/Alert';
           </label>
 
 
-           <label className="text-black-500 font-semibold">
+           <label className="text-gray-300 font-semibold">
             Email
             <input
             type="email"
@@ -108,7 +108,7 @@ import Alert from '../components/Alert';
           </label>
   
           
-            <label className="text-black-500 font-semibold">
+            <label className="text-gray-300 font-semibold">
             Your Message
             <textarea
             name="message"

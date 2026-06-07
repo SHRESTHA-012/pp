@@ -19,7 +19,7 @@ const About = () => {
         👋
       </h1>
 
-      <div className='mt-5 flex flex-col gap-3 text-slate-500'>
+      <div className='mt-5 flex flex-col gap-3 text-gray-400'>
         <p>
           Software Engineering student based in India, 
           specializing in AIML through hands-on learning and building applications.
@@ -47,7 +47,7 @@ const About = () => {
 
       <div className='py-16'>
         <h3 className='subhead-text'>Work Experience.</h3>
-        <div className='mt-5 flex flex-col gap-3 text-slate-500'>
+        <div className='mt-5 flex flex-col gap-3 text-gray-400'>
           <p>
             I've worked with all sorts of companies, leveling up my skills and
             teaming up with smart people. Here's the rundown:
@@ -75,14 +75,16 @@ const About = () => {
                   borderStyle: "solid",
                   borderBottomColor: experience.iconBg,
                   boxShadow: "none",
+                  background: "#1a1a2e",
+                  color: "#e5e7eb",
                 }}
               >
                 <div>
-                  <h3 className='text-black text-xl font-poppins font-semibold'>
+                  <h3 className='text-gray-100 text-xl font-poppins font-semibold'>
                     {experience.title}
                   </h3>
                   <p
-                    className='text-black-500 font-medium text-base'
+                    className='text-gray-400 font-medium text-base'
                     style={{ margin: 0 }}
                   >
                     {experience.company_name}
@@ -93,7 +95,7 @@ const About = () => {
                   {experience.points.map((point, index) => (
                     <li
                       key={`experience-point-${index}`}
-                      className='text-black-500/50 font-normal pl-1 text-sm'
+                      className='text-gray-400 font-normal pl-1 text-sm'
                     >
                       {point}
                     </li>
@@ -105,7 +107,7 @@ const About = () => {
         </div>
       </div>
 
-      <hr className='border-slate-200' />
+      <hr className='border-gray-700' />
 
       <CTA />
     </section>
