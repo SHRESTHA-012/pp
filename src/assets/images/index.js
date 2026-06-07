@@ -1,11 +1,16 @@
 import gssoc from './gssoc.png'
-import logo from './logo.svg'
+import agriculture from './agriculture.png'
 import yonderai from './yonderai.jpeg'
 import ssoc from './ssoc.png'
-
+import cv from './cv.jpeg'
+import sales from './sales.png'
+import agent from './agent.png'
 export {
     gssoc,
-    logo,
+    agriculture,
+    cv,
+    sales,
+    agent,
     yonderai,
     ssoc
 }

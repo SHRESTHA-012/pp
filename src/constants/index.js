@@ -1,6 +1,10 @@
 import { yonderai } from "../assets/images";
 import { gssoc } from "../assets/images";
 import { ssoc } from "../assets/images";
+import { agriculture } from "../assets/images";
+import { cv } from "../assets/images";
+import { sales } from "../assets/images";
+import { agent } from "../assets/images";
 import { 
     car,
     contact,
@@ -134,7 +138,7 @@ export const socialLinks = [
     {
         name: 'GitHub',
         iconUrl: github,
-        link: 'https://github.com/YourGitHubUsername',
+        link: 'https://github.com/SHRESTHA-012',
     },
     {
         name: 'LinkedIn',
@@ -144,12 +148,34 @@ export const socialLinks = [
 ];
 
 export const projects = [
-    {   //just a sample project is here; TODO: Will include my own projects instead of these
-        // iconUrl: pricewise,
-        theme: 'btn-back-red',
-        name: 'Amazon Price Tracker',
-        description: 'Developed a web application that tracks and notifies users of price changes for products on Amazon, helping users find the best deals.',
-        link: 'https://github.com/adrianhajdin/pricewise',
+    {   
+        iconUrl: agriculture,
+        theme: 'btn-back-green',
+        name: 'Kisan Sarthi',
+        description: 'Developed a Telegram bot that provides farmers with AI-powered agricultural advice, crop disease diagnosis, and real-time farming recommendations through simple conversational queries.',
+        link: 'https://github.com/SHRESTHA-012/Kisan-sarthi-agri-advisor',
     },
+    {   
+        iconUrl: cv,
+        theme: 'btn-back-blue',
+        name: 'Object Detection and Counting',
+        description: 'Developed a real-time object detection and tracking system using YOLOv8, Supervision, and OpenCV that counts people crossing a defined line in video streams for crowd analysis, surveillance, and retail analytics.',
+        link: 'https://github.com/SHRESTHA-012/Object-Detection-and-Counting',
+    },
+    {   
+        iconUrl: sales,
+        theme: 'btn-back-yellow',
+        name: 'Sales Forecasting and Data Enrichment',
+        description: 'Developed a sales forecasting model using CatBoost and Upgini that predicts 3 months of product sales across 10 stores, achieving a 90% improvement in accuracy through automated feature enrichment.',
+        link: 'https://github.com/SHRESTHA-012/Sales-forecasting-and-data-enrichment',
+    },
+    {   
+        iconUrl: agent,
+        theme: 'btn-back-red',
+        name: 'Personal Screen Agent',
+        description: 'Developed a Python-based Media Playback Auto-Switcher that seamlessly manages audio between Spotify and YouTube by automatically pausing one when the other plays, ensuring a distraction-free, hands-free listening experience.',
+        link: 'https://github.com/SHRESTHA-012/Personal-SA',
+    },
+
    
 ];
